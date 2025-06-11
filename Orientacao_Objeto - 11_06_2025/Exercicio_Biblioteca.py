@@ -29,39 +29,36 @@ class ItemBiblioteca:
     #Coleção Livros herda de Item biblioteca
 class ColecaoLivros(ItemBiblioteca):
     def __init__(self, titulo, ano_publicado, disponibilidade):
-        #Uso o Super para puxar da mãe
         super().__init__(titulo, ano_publicado, disponibilidade)
-        self_livros = []
+        self.livros = []  # Corrigido: self.livros, não self_livros
 
-
-    def adicionar_livro(self,livro:ItemBiblioteca):
+    def adicionar_livro(self, livro: ItemBiblioteca):
         self.livros.append(livro)
 
-    def verificar_disponibilidade(self,disponibilidade):
-        for livro in self_livros:
-            if not livro.disponibilidade:
+    def verificar_disponibilidade(self):
+        for livro in self.livros:
+            if not livro.disponivel:  
                 return False
         return True
 
     def obter_info(self):
         retorno = super().obter_info()
         for livro in self.livros:
-            #Chamo a função
             retorno += f'\n{livro.obter_info()}'
         return retorno
 
 
-
-#Crio os objetos
+# Criação dos objetos
 livro1 = ItemBiblioteca("Dom Quixote", 1605, True)
 livro2 = ItemBiblioteca("Senhora", 1808, False)
 
-
 colecao = ColecaoLivros("Minha coleção", 2000, False)
+colecao.adicionar_livro(livro1)
+colecao.adicionar_livro(livro2)
+
+# Exibição
 print(colecao.obter_info())
-print(colecao.verificar_disponibilidade(]))
+print(colecao.verificar_disponibilidade())
 
-
-#Printo os objetos criados, com a DEF obter info
 print(livro1.obter_info())
 print(livro2.obter_info())
