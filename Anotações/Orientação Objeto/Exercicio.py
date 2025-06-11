@@ -29,7 +29,7 @@ class Produto:
 
     #Parte 2
     def exibir_dados(self):
-        print(f"Nome produto: {self.nome} e Preço produto: {self.__preco}")
+        print(f"Nome produto: {self.nome} e Pre  ço produto: {self.__preco}")
 
     #Parte 3 - GETTER e SETTER
     @property
