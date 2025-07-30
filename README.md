@@ -43,3 +43,7 @@ A proposta é consolidar os conhecimentos fundamentais da programação por meio
 ├── Variavel_Operadores - 20_03_2025     
 ├── Leticia.txt                          
 └── MARKDOWN.docx                        
+---
+
+
+           
