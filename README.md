@@ -1,7 +1,7 @@
 # 💻 Repositório de Programação Back-End (PBE)
 
 <p align="center">
-  <img src="Atividades_PBE\Logo_PBE\PBE.png" alt="Ícone de Back-End" width="140">
+  <img src="Logo_PBE\PBE.png" alt="Ícone de Back-End" width="140">
 </p>
 
 Este repositório reúne conteúdos e atividades desenvolvidas na disciplina de **Programação Back-End (PBE)**, com foco na lógica de programação, estruturação de código, boas práticas e desenvolvimento de funcionalidades voltadas ao lado servidor das aplicações.
@@ -22,8 +22,12 @@ A proposta é consolidar os conhecimentos fundamentais da programação por meio
 
 ---
 
-## 📁 Estrutura de Pastas
-git clone https://github.com/SeuUsuario/PBE_BackEnd.git
+## 🚀 Como utilizar
+
+1. Faça o clone do repositório:
+   ```bash
+   git clone https://github.com/LeticiaRoth/Atividade_PBE.git
+   ```
 
 ---
 ## 📁 Estrutura de Pastas
